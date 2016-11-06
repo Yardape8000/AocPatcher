@@ -218,9 +218,9 @@ unsigned int GetAddressOfFunction(const char * functionName,unsigned int library
         if(gx2_handle == 0){log_print("LIB_GX2 not aquired\n"); return 0;}
         rpl_handle = gx2_handle;
     }
-    else if(library == LIB_AOC){
-        if(DEBUG_LOG_DYN)log_printf("FindExport of %s! From LIB_AOC %08X\n", functionName,aoc_handle);
-        if(aoc_handle == 0){log_print("LIB_AOC not aquired\n"); return 0;}
+    else if(library == LIB_NN_AOC){
+        if(DEBUG_LOG_DYN)log_printf("FindExport of %s! From LIB_NN_AOC %08X\n", functionName,aoc_handle);
+        if(aoc_handle == 0){log_print("LIB_NN_AOC not aquired\n"); return 0;}
         rpl_handle = aoc_handle;
     }
     else if(library == LIB_AX){

@@ -15,9 +15,7 @@
 
 DECL(int, FSInit, void)
 {
-	log_init("192.168.1.5");
-
-	
+//	log_init(LOGGER_IP);
 	
     if ((int)bss_ptr == 0x0a000000)
     {

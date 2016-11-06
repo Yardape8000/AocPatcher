@@ -7,17 +7,22 @@ extern "C" {
 
 #include "os_defs.h"
 
+// Enter the last Hex digit of your save location (8000000X)
+#define USER_ID		5
+
+// 0 = Aoc injected with saviine, 1 = Aoc on SD (SD:/wiiu/aoc/[Title Id]/[AOC Title])
+#define SSB_ON_SD	0
+
 #define CAFE_OS_SD_PATH             "/vol/external01"
 #define WIIU_PATH                   "/wiiu"
-#define GAMES_PATH                  "/games"
-#define TITLES_PATH                 "/titles"
-#define SD_GAMES_PATH               CAFE_OS_SD_PATH WIIU_PATH GAMES_PATH TITLES_PATH
+#define AOC_PATH                 	"/aoc"
+#define SD_GAMES_PATH               CAFE_OS_SD_PATH WIIU_PATH AOC_PATH
 
 /* Macros for libs */
 #define LIB_CORE_INIT           0
 #define LIB_NSYSNET             1
 #define LIB_GX2                 2
-#define LIB_AOC                 3
+#define LIB_NN_AOC              3
 #define LIB_AX                  4
 #define LIB_FS                  5
 #define LIB_OS                  6

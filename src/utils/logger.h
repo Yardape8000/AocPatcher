@@ -69,7 +69,7 @@ extern "C" {
 
 #define BYTE_CREATE_THREAD              0x60
 
-#define LOADIINE_LOGGER_IP              "192.168.0.181"
+#define LOGGER_IP              "192.168.0.100"
 
 int  logger_connect(int *socket);
 void logger_disconnect(int socket);
